@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100">
+<head>
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Session Generator</title>
+<script src="/cdn-cgi/apps/head/20D1z-t-EqpxWvNA72O0_2k4__w.js"></script><link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+<main>
+<section id="section_1" class="section">
+<div class="container">
+<div class="columns">
+<div class="column">
+<div class="field">
+<input type="number" class="input" placeholder="API ID" id="apiId" />
+</div>
+</div>
+<div class="column">
+<div class="field">
+<input type="text" class="input" placeholder="API hash" id="apiHash" />
+</div>
+</div>
+</div>
+<div class="field">
+<input type="text" class="input" placeholder="628xxxxx" id="number" />
+</div>
+<button id="start" onclick="start();" class="button is-link mt-2">
+Next
+</button>
+</div>
+</section>
+<section class="section is-hidden" id="section_2">
+<div class="container">
+<div class="field">
+<input type="number" class="input" id="code" placeholder="Code" />
+</div>
+<button id="codeb" onclick="code();" class="button is-link mt-2">
+Next
+</button>
+</div>
+</section>
+<section class="section is-hidden" id="section_3">
+<div class="container">
+<div class="field">
+<input type="password" class="input" id="password" placeholder="Password" />
+</div>
+<button id="passwordb" onclick="password();" class="button is-link mt-2">
+Next
+</button>
+</div>
+</section>
+<section class="section is-hidden" id="section_4">
+<div class="container">
+<h1 class="title">Copy by clicking on Session string.</h1>
+<p id="data"></p>
+</div>
+</section>
+<div id="errorModal" class="modal">
+<div class="modal-background"></div>
+<div class="modal-content">
+<div class="card">
+<div class="card-content">
+<div class="content" id="errorModalContent"></div>
+</div>
+<script src="js/gramjs.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
